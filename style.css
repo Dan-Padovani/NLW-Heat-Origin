@@ -89,28 +89,10 @@ ul {
 }
 
 
-.youtube:hover {
+li:hover {
 	transform:scale(1.2);
 	transform-origin: bottom;
 	transition-duration: 0.5s;	
-}
-
-.instagram:hover {
-	transform:scale(1.2);
-	transform-origin: bottom;
-	transition-duration: 0.5s;
-}
-
-.facebook:hover {
-	transform:scale(1.2);
-	transform-origin: bottom;
-	transition-duration: 0.5s;
-}
-
-.twitter:hover {
-	transform:scale(1.2);
-	transform-origin: bottom;
-	transition-duration: 0.5s;
 }
 
 @media screen and (min-width: 500px) {
