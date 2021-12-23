@@ -28,6 +28,7 @@ main {
 
 .container {
 	max-width: 250px;
+	margin-top: 11.5rem;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -37,7 +38,7 @@ main {
 .avatar {
 	/*1rem == 16px*/
 	width: 10rem;
-	margin: 11.5rem auto 0;
+	margin: auto;
 	position: relative;
 }
 
@@ -74,7 +75,7 @@ p {
 }
 
 ul {
-	margin-top: 4rem;
+	margin-top: 2rem;
 	list-style: none;
 	padding: 0;
 	display: flex;
@@ -93,10 +94,23 @@ li:hover {
 	opacity: 1.0;
 }
 
-@media screen and (min-width: 500px) {
+@media (min-width: 720px) {
+	body {
+		background: url(images/desktop_background.svg) no-repeat center/cover;
+	}
+	
 	main {
-		background: url(images/background.svg) no-repeat center;
-		width: 100vw;
-		height: 100vh;		
+		background: url(images/background1.svg) no-repeat center; 
+		width: 358px;
+		height: 540px;
+	}
+
+	.avatar {
+		margin: 13.1rem auto 0;		
+	}
+
+	p {
+		margin-top: 1rem;
 	}
 }
+
