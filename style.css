@@ -3,7 +3,7 @@
 	margin: 0;
 }
 
-html,
+
 body {
 	--gray: hsl(240, 9%, 89%);
 	--black: hsl(240, 6%, 13%);
@@ -12,9 +12,6 @@ body {
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
-}
-
-body {
 	display: grid;
 	place-items: center;
 }
@@ -94,19 +91,42 @@ li:hover {
 	opacity: 1.0;
 }
 
-@media (min-width: 720px) {
-	body {
-		background: url(images/desktop_background.svg) no-repeat center/cover;
-	}
-	
+@media screen and (min-width: 720px) {
 	main {
 		background: url(images/background1.svg) no-repeat center; 
 		width: 358px;
 		height: 540px;
 	}
 
+	body {
+		background-color: black;
+		background: url(images/desktop_background.svg) no-repeat center/cover;
+	}
+
+	.strip {
+		width: 64px;
+		height: 156px;
+		position: absolute;
+		background: linear-gradient(135deg, rgba(255,0,142,1) 0%, rgba(255,205,30,1) 100%);
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		z-index: 1;
+	}
+
+	.avatar::before {
+		content: '';
+		display: flex;
+		position: relative;
+		width: 80px;
+		height: 8px;
+		background-color: #121214;
+		margin: auto;
+		top: -3rem;		
+	}
 	.avatar {
-		margin: 13.1rem auto 0;		
+		margin: 12.5rem auto 0;		
 	}
 
 	p {
