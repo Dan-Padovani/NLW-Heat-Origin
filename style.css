@@ -20,7 +20,6 @@ main {
 	background: url(images/background.svg) no-repeat center/cover;
 	width: 100vw;
 	height: 100vh;
-	min-height: 812px;
 }
 
 .container {
@@ -33,7 +32,6 @@ main {
 }
 
 .avatar {
-	/*1rem == 16px*/
 	width: 10rem;
 	margin: auto;
 	position: relative;
@@ -94,8 +92,8 @@ li:hover {
 @media screen and (min-width: 720px) {
 	main {
 		background: url(images/background1.svg) no-repeat center; 
+		background-position: 0 34%;
 		width: 358px;
-		height: 540px;
 	}
 
 	body {
@@ -110,6 +108,7 @@ li:hover {
 		background: linear-gradient(135deg, rgba(255,0,142,1) 0%, rgba(255,205,30,1) 100%);
 		margin-left: auto;
 		margin-right: auto;
+		top: 0;
 		left: 0;
 		right: 0;
 		z-index: 1;
